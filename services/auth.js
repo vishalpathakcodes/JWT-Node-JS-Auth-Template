@@ -1,5 +1,5 @@
 const jwt=require("jsonwebtoken");
-const secret="123@456@789" //Add your own secret key here. Do not share it with anyone. I have changed mine
+const secret="your-secret-key" //Add your own secret key here. Do not share it with anyone. I have changed mine
 async function setUser(user){
     return jwt.sign({
         _id:user.id,
